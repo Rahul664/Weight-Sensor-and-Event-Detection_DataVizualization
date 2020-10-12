@@ -62,6 +62,7 @@ for i in csv_files_in_cwd:
                     plt.ylabel("Weight Sensor Reading (in grams)")
                     plt.title("Gondola "+str(gondola)+" "+"Shelf "+str(shelf)+" "+str(i))
                     plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
+                    plt.ioff()
                     plt.savefig(str(path_to_file)+"/"+str(gondola)+","+str(shelf)+".png")
                 except:
                     pass
