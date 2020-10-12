@@ -55,7 +55,7 @@ for i in csv_files_in_cwd:
                     y1=g_sh['ma']
 #                     y2=g_sh['mv']
 
-                    plt.figure(figsize=(30,4))
+                    fig=plt.figure(figsize=(30,4))
                     plt.plot(x,y,'-b',label='Aggregated weight',linewidth=.35)
                     plt.plot(x,y1,'--r',label="Moving average",linewidth=2)
                     plt.xlabel("Timestamp (in seconds)")
@@ -64,6 +64,7 @@ for i in csv_files_in_cwd:
                     plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
                     plt.ioff()
                     plt.savefig(str(path_to_file)+"/"+str(gondola)+","+str(shelf)+".png")
+                    plt.close(fig)
                 except:
                     pass
     except:
