@@ -11,5 +11,5 @@ To start analysing the weigh.csv files using the python script and plot the time
 <br />
 After the script has run successfully you will find the corresponding folders of weight.csv files which contain the figures (weight vs timestamp) in the format<br /> 
 --------------------------------- <br />
-gondola_number,shelf_number.png.  <br />
+gondola_number,shelf_number.png   <br />
 --------------------------------- <br />
