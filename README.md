@@ -6,6 +6,7 @@ To start analysing the weigh.csv files using the python script and plot the time
 `$ git clone https://github.com/Rahul664/Analysis_plots.git`<br />
 2. Change the directory to cloned repository<br/>
 `$ cd Analysis_plots`<br />
+
 3.Install the requirements<br/>
 `$ pip3 install -r requirements.txt`<br/>
 4. Run the python script Plot.py<br />
