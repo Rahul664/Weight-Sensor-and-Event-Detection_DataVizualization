@@ -17,5 +17,6 @@ gondola_number,shelf_number.png   <br />
 --------------------------------- <br />
 
 -------------------------------- <br/>
+### NOTE:
 The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories <br/>
 --------------------------------- <br/>
