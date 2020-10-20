@@ -29,7 +29,7 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   </br>
 </p>
 </br>
-Put Down Event = Object being placed back from the customer on tha particular gondola and shelf </br>
+Put Down Event = Object being placed back from the customer on that particular gondola and shelf </br>
 NO Event = No object being picked up from that shelf </br>
   <p align="center">
 <img src="images/1,1.png" class="center">
