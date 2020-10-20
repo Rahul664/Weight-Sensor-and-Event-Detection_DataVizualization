@@ -1,5 +1,23 @@
 # Python Data_Vizualization
+
+Aifi Store is autonomus store for cashierless shopping experience this is achieved by multi modal sensing (Vision modality, weight modality and location modality).
+<br />
+
 This repository helps you plot and vizualize the weight sensor data and moving average from csv files from the AiFi store.
+<br />
+<p align="center">
+<img src="images/plates.png" width="500" class="center">
+  </br>
+  <em>AIFI Nano store layout</em>
+  </br>
+  <p align="center">
+  <em>Image Credits <a href="https://dl.acm.org/doi/10.1145/3360322.3361018" target="_blank">AIM3S paper</a></em>
+  </p>
+</p>
+<br/>
+
+
+
 
 To start analysing the weigh.csv files using the python script and plot the timeseries plot for corresponding files.
 1. Clone the repository<br />
