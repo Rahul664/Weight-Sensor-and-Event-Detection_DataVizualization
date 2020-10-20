@@ -18,6 +18,12 @@ This repository helps you plot and vizualize the weight sensor data and moving a
 <p>
   Gondola is similar to the shelf in any normal store and composed of shelfs and in this case there are 5 to 6 shelfs in a Gondola </br>
   Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf</br>
+  Every plate has a sampling rate of **60Hz**, so there are 60 samples collected every second from each plate <br/>
+  The pick up event on the plate can be observed and marked when the weight sensor reading decreases with time and increases with time when the put down event happens.</br>
+  
+  Pick Up Event = Object being taken from the particular gondola and shelf from the customer</br>
+  Put Down Event = Object being placed back from the customer on tha particular gondola and shelf </br>
+  
 </p>
 
 
