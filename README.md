@@ -25,7 +25,7 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   <p align="center">
 <img src="images/1,6.png" class="center">
   </br>
-  <em>Example Pick Up Event</em>
+  <em>Example Pick Up Event Graph</em>
   </br>
 </p>
 </br>
@@ -34,7 +34,7 @@ NO Event = No object being picked up from that shelf </br>
   <p align="center">
 <img src="images/1,1.png" class="center">
   </br>
-  <em>Example Pick Up Event</em>
+  <em>Example No Event Graph</em>
   </br>
 </p>
 </br>
