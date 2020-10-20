@@ -15,6 +15,10 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   </p>
 </p>
 <br/>
+<p>
+  Gondola is similar to the shelf in any normal store and composed of shelfs and in this case there are 5 to 6 shelfs in a Gondola </br>
+  Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf</br>
+</p>
 
 
 
@@ -30,7 +34,7 @@ To start analysing the weigh.csv files using the python script and plot the time
 `$ python3 Plot.py`<br />
 
 After the script has run successfully you will find the corresponding folders of weight.csv files which contain the figures (weight vs timestamp) in the format<br /> 
---------------------------------- --------------------------------- --------------------------------- --------------------------------- <br />
+--------------------------------- --------------------------------- --------------------------------- ------------------------------- <br />
 
 <p align="center">
 gondola_number,shelf_number.png   <br />
@@ -45,7 +49,7 @@ Ex: 1,1.png<br/>
   </br>
 </p>
 
---------------------------------- --------------------------------- --------------------------------- --------------------------------- <br />
+--------------------------------- --------------------------------- --------------------------------- ------------------------------- <br />
 
 
 ### NOTE:
