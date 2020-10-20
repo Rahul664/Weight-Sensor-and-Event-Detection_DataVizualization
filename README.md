@@ -11,7 +11,7 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   <em>AIFI Nano store layout</em>
   </br>
   <p align="center">
-  <em></em>
+  <em>Image Credits <a href="https://dl.acm.org/doi/10.1145/3360322.3361018" target="_blank">AIM3S paper</a></em>
   </p>
 </p>
 <br/>
