@@ -1,4 +1,4 @@
-# Python Data_Vizualization
+# Python Data Vizualization
 
 Aifi Store is autonomus store for cashierless shopping experience this is achieved by multi modal sensing (Vision modality, weight modality and location modality).
 <br />
