@@ -22,7 +22,22 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   The pick up event on the plate can be observed and marked when the weight sensor reading decreases with time and increases with time when the put down event happens.</br>
   
   Pick Up Event = Object being taken from the particular gondola and shelf from the customer</br>
-  Put Down Event = Object being placed back from the customer on tha particular gondola and shelf </br>
+  <p align="center">
+<img src="images/1,6.png" class="center">
+  </br>
+  <em>Example Pick Up Event</em>
+  </br>
+</p>
+</br>
+Put Down Event = Object being placed back from the customer on tha particular gondola and shelf </br>
+NO Event = No object being picked up from that shelf </br>
+  <p align="center">
+<img src="images/1,1.png" class="center">
+  </br>
+  <em>Example Pick Up Event</em>
+  </br>
+</p>
+</br>
   
 </p>
 
