@@ -81,4 +81,14 @@ Ex: 1,1.png<br/>
 
 ### NOTE:
 The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories <br/>
+### Details of the weight sensor files:
+<p>
+  These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in grams),gondola,shelf,plate number)<br/>
+  <p align="center">
+<img src="images/weight_file.png" class="center">
+  </br>
+  <em>Timeseries Graph</em>
+  </br>
+</p>
+</p>
 
