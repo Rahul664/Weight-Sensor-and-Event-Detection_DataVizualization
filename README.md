@@ -60,7 +60,7 @@ The python script must be in the same folder as of the weight.csv files and .csv
 </br>
 Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
 </p>
-
+# Instruction to run the script
 To start analysing the weigh.csv files using the python script and plot the timeseries plot for corresponding files.
 1. Clone the repository<br />
 `$ git clone https://github.com/Rahul664/Analysis_plots.git`<br />
