@@ -17,52 +17,56 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   </p>
 
 
- <p>Gondola is similar to vertical fixture consisting of horizontal shelfs in any normal store and in this case there are 5 to 6 shelfs in a Gondola </p>
-  <p>Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf</p>
+ <p>Gondola is similar to vertical fixture consisting of horizontal shelfs in any normal store and in this case there are 5 to 6 shelfs in a Gondola. 
+  Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf.</p>
   <p>Every plate has a sampling rate of **60Hz**, so there are 60 samples collected every second from each plate </p>
   <p>The pick up event on the plate can be observed and marked when the weight sensor reading decreases with time and increases with time when the put down event happens.</p>
   
   Pick Up Event = Object being taken from the particular gondola and shelf from the customer</br>
   <p align="center">
-<img src="images/1,3.png" class="center">
-  </br>
-  <em>Example Pick Up Event Graph</em>
-  </br>
-</p>
-</br>
+      <img src="images/1,3.png" class="center">
+      </br>
+      <em>Example Pick Up Event Graph</em>
+      </br>
+  </p>
+  
 Put Down Event = Object being placed back from the customer on that particular gondola and shelf </br>
 <p align="center">
-<img src="images/1,5.png" class="center">
-  </br>
-  <em>Example Put Down Event Graph</em>
-  </br>
+    <img src="images/1,5.png" class="center">
+    </br>
+    <em>Example Put Down Event Graph</em>
+    </br>
 </p>
+ 
 NO Event = No object being picked up from that shelf </br>
-  <p align="center">
-<img src="images/1,1.png" class="center">
-  </br>
-  <em>Example No Event Graph</em>
-  </br>
+<p align="center">
+    <img src="images/1,1.png" class="center">
+    </br>
+    <em>Example No Event Graph</em>
+    </br>
 </p>
-</br>
   
-</p>
+
 ### NOTE: 
 The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories <br/>
 ### Details of the weight sensor files:
 <p>
-  These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in grams),gondola,shelf,plate number)</p>
-  <p align="center">
-<img src="images/weight_file.png" height="250" width="500" class="center">
-  </br>
-  <em>Snapshot of weight.csv file</em>
-  </br>
+These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in       grams),gondola,shelf,plate number)
 </p>
-</br>
-<p>Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
+  
+ <p align="center">
+      <img src="images/weight_file.png" height="250" width="500" class="center">
+      </br>
+      <em>Snapshot of weight.csv file</em>
+      </br>
+ </p>
+
+<p>
+Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
 </p>
 
 # Instruction to run the script 
+
 To start analysing the weigh.csv files using the python script and plot the timeseries plot for corresponding files.
 1. Clone the repository<br />
 `$ git clone https://github.com/Rahul664/Analysis_plots.git`<br />
@@ -73,20 +77,21 @@ To start analysing the weigh.csv files using the python script and plot the time
 4. Run the python script Plot.py<br />
 `$ python3 Plot.py`<br />
 
-After the script has run successfully you will find the corresponding folders of weight.csv files which contain the figures (weight vs timestamp) in the format<br /> 
+After the script has run successfully you will find the corresponding folders of weight.csv files which contain the figures (weight vs timestamp) in the format<br/> 
 --------------------------------- --------------------------------- --------------------------------- ------------------------------- <br />
 
 <p align="center">
 gondola_number,shelf_number.png   <br />
 </p>
+
 <p align="center">
-Ex: 1,1.png<br/>
+    Ex: 1,1.png<br/>
 </p>
 <p align="center">
-<img src="images/1,1.png" class="center">
-  </br>
-  <em>Timeseries Graph</em>
-  </br>
+    <img src="images/1,1.png" class="center">
+    </br>
+    <em>Timeseries Graph</em>
+    </br>
 </p>
 
 --------------------------------- --------------------------------- --------------------------------- ------------------------------- <br />
