@@ -23,13 +23,19 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   
   Pick Up Event = Object being taken from the particular gondola and shelf from the customer</br>
   <p align="center">
-<img src="images/1,6.png" class="center">
+<img src="images/1,3.png" class="center">
   </br>
   <em>Example Pick Up Event Graph</em>
   </br>
 </p>
 </br>
 Put Down Event = Object being placed back from the customer on that particular gondola and shelf </br>
+<p align="center">
+<img src="images/1,5.png" class="center">
+  </br>
+  <em>Example Put Down Event Graph</em>
+  </br>
+</p>
 NO Event = No object being picked up from that shelf </br>
   <p align="center">
 <img src="images/1,1.png" class="center">
