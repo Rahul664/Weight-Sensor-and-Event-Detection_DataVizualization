@@ -46,9 +46,20 @@ NO Event = No object being picked up from that shelf </br>
 </br>
   
 </p>
-
-
-
+### NOTE:
+The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories <br/>
+### Details of the weight sensor files:
+<p>
+  These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in grams),gondola,shelf,plate number)<br/>
+  <p align="center">
+<img src="images/weight_file.png" height="250" width="500" class="center">
+  </br>
+  <em>Snapshot of weight.csv file</em>
+  </br>
+</p>
+</br>
+Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
+</p>
 
 To start analysing the weigh.csv files using the python script and plot the timeseries plot for corresponding files.
 1. Clone the repository<br />
@@ -77,19 +88,3 @@ Ex: 1,1.png<br/>
 </p>
 
 --------------------------------- --------------------------------- --------------------------------- ------------------------------- <br />
-
-
-### NOTE:
-The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories <br/>
-### Details of the weight sensor files:
-<p>
-  These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in grams),gondola,shelf,plate number)<br/>
-  <p align="center">
-<img src="images/weight_file.png" height="250" width="500" class="center">
-  </br>
-  <em>Snapshot of weight.csv file</em>
-  </br>
-</p>
-</br>
-Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
-</p>
