@@ -5,21 +5,22 @@ Aifi Store is autonomus store for cashierless shopping experience this is achiev
 
 This repository helps you plot and vizualize the weight sensor data and moving average from csv files from the AiFi store.
 <br />
+
 <p align="center">
 <img src="images/plates.png" width="500" class="center">
   </br>
   <em>AIFI Nano store layout</em>
-  </br>
+  </p>
+
   <p align="center">
   <em>Image Credits <a href="https://dl.acm.org/doi/10.1145/3360322.3361018" target="_blank">AIM3S paper</a></em>
   </p>
-</p>
-<br/>
-<p>
-  Gondola is similar to vertical fixture consisting of horizontal shelfs in any normal store and in this case there are 5 to 6 shelfs in a Gondola </br>
-  Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf</br>
-  Every plate has a sampling rate of **60Hz**, so there are 60 samples collected every second from each plate <br/>
-  The pick up event on the plate can be observed and marked when the weight sensor reading decreases with time and increases with time when the put down event happens.</br>
+
+
+ <p>Gondola is similar to vertical fixture consisting of horizontal shelfs in any normal store and in this case there are 5 to 6 shelfs in a Gondola </p>
+  <p>Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf</p>
+  <p>Every plate has a sampling rate of **60Hz**, so there are 60 samples collected every second from each plate </p>
+  <p>The pick up event on the plate can be observed and marked when the weight sensor reading decreases with time and increases with time when the put down event happens.</p>
   
   Pick Up Event = Object being taken from the particular gondola and shelf from the customer</br>
   <p align="center">
@@ -46,11 +47,11 @@ NO Event = No object being picked up from that shelf </br>
 </br>
   
 </p>
-<h3> NOTE: </h3>
+### NOTE: 
 The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories <br/>
-<h3> Details of the weight sensor files:</h3>
+### Details of the weight sensor files:
 <p>
-  These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in grams),gondola,shelf,plate number)<br/>
+  These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in grams),gondola,shelf,plate number)</p>
   <p align="center">
 <img src="images/weight_file.png" height="250" width="500" class="center">
   </br>
@@ -58,10 +59,10 @@ The python script must be in the same folder as of the weight.csv files and .csv
   </br>
 </p>
 </br>
-Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
+<p>Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
 </p>
-</br>
-<h1> Instruction to run the script </h1>
+
+# Instruction to run the script 
 To start analysing the weigh.csv files using the python script and plot the timeseries plot for corresponding files.
 1. Clone the repository<br />
 `$ git clone https://github.com/Rahul664/Analysis_plots.git`<br />
