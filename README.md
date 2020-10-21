@@ -90,5 +90,6 @@ The python script must be in the same folder as of the weight.csv files and .csv
   <em>Snapshot of weight.csv file</em>
   </br>
 </p>
+</br>
+Each of these files have data of around 2 minutes or 120 seconds in the form of timestamp. In order to unpack date and time from timestamp use datetime module from python.
 </p>
-
