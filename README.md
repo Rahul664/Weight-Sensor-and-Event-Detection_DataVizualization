@@ -87,7 +87,7 @@ The python script must be in the same folder as of the weight.csv files and .csv
   <p align="center">
 <img src="images/weight_file.png" height="250" width="500" class="center">
   </br>
-  <em>Timeseries Graph</em>
+  <em>Snapshot of weight.csv file</em>
   </br>
 </p>
 </p>
