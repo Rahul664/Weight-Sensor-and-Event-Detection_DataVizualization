@@ -33,7 +33,7 @@ Put Down Event = Object being placed back from the customer on that particular g
 <p align="center">
 <img src="images/1,5.png" class="center">
   </br>
-  <em>Example No Event Graph</em>
+  <em>Example Put Down Event Graph</em>
   </br>
 </p>
 NO Event = No object being picked up from that shelf </br>
