@@ -55,12 +55,12 @@ for i in csv_files_in_cwd:
                     y1=g_sh['ma']
 #                     y2=g_sh['mv']
 
-                    fig=plt.figure(figsize=(30,4))
+                    fig=plt.figure(figsize=(30,8))
                     plt.plot(x,y,'-b',label='Aggregated weight',linewidth=.35)
                     plt.plot(x,y1,'--r',label="Moving average",linewidth=2)
-                    plt.xlabel("Timestamp (in seconds)")
-                    plt.ylabel("Weight Sensor Reading (in grams)")
-                    plt.title("Gondola "+str(gondola)+" "+"Shelf "+str(shelf)+" "+str(i))
+                    plt.xlabel("Timestamp (in seconds)",fontsize=25)
+                    plt.ylabel("Weight Sensor Reading (in grams)",fontsize=25)
+                    plt.title("Gondola "+str(gondola)+" "+"Shelf "+str(shelf)+" "+str(i),fontsize=30)
                     plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
                     plt.ioff()
                     plt.savefig(str(path_to_file)+"/"+str(gondola)+","+str(shelf)+".png")
