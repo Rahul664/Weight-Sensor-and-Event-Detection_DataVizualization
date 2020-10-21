@@ -16,7 +16,7 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   <em>Image Credits <a href="https://dl.acm.org/doi/10.1145/3360322.3361018" target="_blank">AIM3S paper</a></em>
   </p>
 
-
+<p>The store is organised in the gondola's and each gondola has shelfs that holds the products and each shelf has weight sensor plates. These weight sensor plates data is used to find the event trigger (pick up, put down or no event) from which we can find the weight of the product picked.</p>
  <p>Gondola is similar to vertical fixture consisting of horizontal shelfs in any normal store and in this case there are 5 to 6 shelfs in a Gondola. 
   Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf.</p>
   <p>Every plate has a sampling rate of **60Hz**, so there are 60 samples collected every second from each plate </p>
