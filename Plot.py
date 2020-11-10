@@ -48,7 +48,7 @@ for i in csv_files_in_cwd:
                     g_sh['mv']=g_sh['reading'].rolling(window=61,min_periods=61).var(ddof=0)
                     x=g_sh['timestamp']
 
-                    x=x-x.iloc[0]
+                    x=list(i for i in range(len(g_sh['timestamp'])))
 
                     y=g_sh['reading']
 
