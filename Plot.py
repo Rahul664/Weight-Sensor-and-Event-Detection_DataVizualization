@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 #Import library section
@@ -13,9 +13,11 @@ from collections import OrderedDict
 import sys
 import csv
 import os
+from matplotlib.patches import Patch
+from matplotlib.lines import Line2D
 
 
-# In[ ]:
+# In[2]:
 
 
 cwd=os.getcwd()
@@ -29,9 +31,11 @@ for i in files_in_cwd:
             csv_files_in_cwd.append(i)
     except:
         pass
+# csv_files_in_cwd= [i for i in files_in_cwd if(i.split(".")[1]=="csv")]
+# csv_files_in_cwd
 
 
-# In[ ]:
+# In[28]:
 
 
 for i in csv_files_in_cwd:
@@ -89,21 +93,33 @@ for i in csv_files_in_cwd:
                         else:
                             k+=1
                     k=0
-#                     print(event)
+                    
+                    a1="S"
+                    b1="E"
                     x=list(i for i in range(len(g_sh['timestamp'])))
                     y=g_sh['reading']
                     y1=g_sh['ma']
                     
+                    legend_elements = [ Line2D([0],[0], linestyle='-', color='b',lw=.35, label='Raw Shelf Weight'),
+                                       Line2D([0],[0], linestyle='--', color='r',lw=3, label='Moving Average Shelf Weight'),
+                                        Line2D( [0],[0],marker='o', color='w', label='Detected Event(s)',
+                                              markerfacecolor='g', markersize=10),
+                                       Line2D( [0],[0],marker='o', color='w', label='S=Event Start',
+                                              markerfacecolor='g', markersize=10),
+                                       Line2D( [0],[0],marker='o', color='w', label='E=Event End',
+                                              markerfacecolor='g', markersize=10)]
+                    
                     fig=plt.figure(figsize=(30,8))
-                    plt.plot(x,y,'-b',label='Aggregated weight',linewidth=.35)
-                    plt.plot(x,y1,'--r',label="Moving average",linewidth=3)
+                    plt.plot(x,y,'-b',linewidth=.35)
+                    plt.plot(x,y1,'--r',linewidth=3)
                     
                     if len(event)!=0:
                         for i in range(len(event)):
                             x2=list(i for i in range(event[i][1]-30, event[i][2]))
                             y2=list(g_sh.iloc[event[i][1]-30: event[i][2]]['ma'])
-                            plt.plot(x2,y2,'*g',linewidth=.35)
-                    
+                            plt.plot(x2,y2,'.g',linewidth=.35)
+                            plt.annotate(str(a1),xy=(x2[0],y2[0]), fontsize=25)
+                            plt.annotate(str(b1),xy=(x2[len(x2)-1],y2[len(y2)-1]), fontsize=25)   
                     plt.xticks(fontsize=25)
                     plt.yticks(fontsize=25)
                     
@@ -111,8 +127,8 @@ for i in csv_files_in_cwd:
                     plt.ylabel("Weight Sensor Reading (in grams)",fontsize=25)
                     
                     plt.title("Gondola "+str(gondola)+" "+"Shelf "+str(shelf)+" "+str(i),fontsize=30)
-                    plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
-                    
+#                     plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
+                    plt.legend(handles=legend_elements, loc='upper right',prop={"size":15})
                     plt.ioff()
                     plt.savefig(str(path_to_file)+"/"+str(gondola)+","+str(shelf)+".png")
                     plt.close(fig)
@@ -120,10 +136,5 @@ for i in csv_files_in_cwd:
                         pass
     except:
         pass
-
-
-# In[ ]:
-
-
 
 
