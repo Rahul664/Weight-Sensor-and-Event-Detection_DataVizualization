@@ -60,7 +60,7 @@ NO Event = No object being picked up from that shelf </br>
 
 ### Details of the weight sensor files:
 <p>
-These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are 10 cases in total and each file has 5 columns (timestamp,reading(in       grams),gondola,shelf,plate number)
+These weight.csv (Baseline cases) files are from the AIFI CPS IoT 2020 week.There are over 50 cases in total and each file has 5 columns (timestamp,reading(in       grams),gondola,shelf,plate number)
 </p>
   
  <p align="center">
