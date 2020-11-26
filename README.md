@@ -55,7 +55,7 @@ NO Event = No object being picked up from that shelf </br>
 
 ### NOTE: 
 1.The python script must be in the same folder as of the weight.csv files and .csv files should not be placed in other subdirectories. <br />
-2.The videos for the corresponding weight sensor data can be found in the videos folder in the repository and are named similar to their corresponding .csv files.<br />
+2.The videos for the corresponding weight sensor data can be found in the <b>"Videos folder"</b> in the repository and are named similar to their corresponding <b>".csv"</b> files.<br />
 3.Each video files consists of video data from 13 different camera angles.<br />
 
 ### Details of the weight sensor files:
