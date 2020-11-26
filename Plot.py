@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""
+# @Author  : Rahul S H
+# @Email   : rhoskeri50@gmail.com
+# @File    : Plot.py
+"""
 
 # In[1]:
 
