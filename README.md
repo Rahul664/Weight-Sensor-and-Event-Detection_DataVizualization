@@ -15,12 +15,18 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   <p align="center">
   <em>Image Credits <a href="https://dl.acm.org/doi/10.1145/3360322.3361018" target="_blank">AIM3S paper</a></em>
   </p>
+  
+### Overview
 
 <p>The store is organised in the gondola's and each gondola has shelfs that holds the products and each shelf has weight sensor plates. These weight sensor plates data is used to find the event trigger (pick up, put down or no event) from which we can find the weight of the product picked.</p>
  <p>Gondola is similar to vertical fixture consisting of horizontal shelfs in any normal store and in this case there are 5 to 6 shelfs in a Gondola. 
   Every shelf again is composed of weight sensing plates, weight sensing modalities, there are around 12 plates on each shelf.</p>
   <p>Every plate has a sampling rate of **60Hz**, so there are 60 samples collected every second from each plate </p>
   <p>The pick up event on the plate can be observed and marked when the weight sensor reading decreases with time and increases with time when the put down event happens.</p>
+  
+  ### Event Detection
+  <p>The event is said to be detected if the moving varience calculated from the raw weight sensor reading exceeds a set threshold of (10000gm^2 or 0.01kg^2) over the siliding window length of 0.5 seconds, which is half of the sampling rate of sensors, i.e 1 second </p>
+  
   
   Pick Up Event = Object being taken from the particular gondola and shelf from the customer</br>
   <p align="center">
@@ -78,6 +84,10 @@ To start analysing the weigh.csv files using the python script and plot the time
 `$ python3 Plot.py`<br />
 
 After the script has run successfully you will find the corresponding folders of weight.csv files which contain the figures (weight vs timestamp) in the format<br/> 
+
+# Instruction to run the Jupyter Notebook
+
+Run the Plot.ipynb file using Jupyter Notebook by placing .csv files in the same directory as the Plot.ipynb script.<br/>
 --------------------------------- --------------------------------- --------------------------------- ------ <br />
 
 <p align="center">
