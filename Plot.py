@@ -31,8 +31,7 @@ for i in files_in_cwd:
             csv_files_in_cwd.append(i)
     except:
         pass
-# csv_files_in_cwd= [i for i in files_in_cwd if(i.split(".")[1]=="csv")]
-# csv_files_in_cwd
+
 
 
 # In[28]:
@@ -126,7 +125,7 @@ for i in csv_files_in_cwd:
                     plt.xlabel("Timestamp (in seconds)",fontsize=25)
                     plt.ylabel("Weight Sensor Reading (in grams)",fontsize=25)
                     
-                    plt.title("Gondola "+str(gondola)+" "+"Shelf "+str(shelf)+" "+str(i),fontsize=30)
+                    plt.title("Gondola "+str(gondola)+" "+"Shelf "+str(shelf)+" "+str(file_name),fontsize=30)
 #                     plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
                     plt.legend(handles=legend_elements, loc='upper right',prop={"size":15})
                     plt.ioff()
