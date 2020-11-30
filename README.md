@@ -5,6 +5,8 @@ Aifi Store is autonomus store for cashierless shopping experience this is achiev
 <br />
 
 This repository helps you plot and vizualize the weight sensor data and moving average from csv files from the AiFi store.
+### Note:
+For complete dataset click on the DOI batch at the top to download from <strong>Zenodo</strong> open source dataset repository.
 <br />
 
 <p align="center">
