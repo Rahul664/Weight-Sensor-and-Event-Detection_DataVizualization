@@ -1,4 +1,5 @@
-# Python Data Vizualization
+# Python Data Vizualization   <a href="https://doi.org/10.5281/zenodo.4292484"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4292484.svg" alt="DOI"></a>
+
 
 Aifi Store is autonomus store for cashierless shopping experience this is achieved by multi modal sensing (Vision modality, weight modality and location modality).
 <br />
@@ -38,7 +39,7 @@ This repository helps you plot and vizualize the weight sensor data and moving a
   
 Put Down Event = Object being placed back from the customer on that particular gondola and shelf </br>
 <p align="center">
-    <img src="images/1,5.png" class="center">
+    <img src="images/1,5.png" class="center">. 
     </br>
     <em>Example Put Down Event Graph</em>
     </br>
